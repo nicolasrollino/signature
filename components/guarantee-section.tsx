@@ -1,17 +1,31 @@
-import { Shield, Truck, RefreshCcw, Headphones } from "lucide-react"
+import { Shield, RefreshCcw, Headphones } from "lucide-react"
 
 const features = [
   {
     icon: Shield,
-    title: "Garantia incluida",
+    title: "Equipos verificados",
     description:
-      "Todos nuestros productos incluyen garantia. 6 meses para usados, 12 meses para nuevos.",
+      "Todos nuestros productos pasan por un proceso de revision tecnica antes de ser publicados.",
   },
   {
-    icon: Truck,
-    title: "Envio a todo el pais",
+    icon: RefreshCcw,
+    title: "Transparencia total",
     description:
-      "Envios a toda la Argentina por correo o moto mensajeria. Retiro en sucursal disponible.",
+      "Publicamos el estado real del equipo con fotos y descripcion detallada.",
+  },
+  {
+    icon: Headphones,
+    title: "Atencion personalizada",
+    description:
+      "Te asesoramos por WhatsApp para que elijas el equipo ideal.",
+  },
+  {
+    icon: Shield,
+    title: "Compra segura",
+    description:
+      "Operacion directa, clara y sin intermediarios.",
+  },
+]
   },
   {
     icon: RefreshCcw,
