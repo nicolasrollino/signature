@@ -48,9 +48,6 @@ export function SiteHeader() {
           <Link href="/#productos" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
             Productos
           </Link>
-          <Link href="/#garantia" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-            Garantia
-          </Link>
           <Link href="/#faq" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
             FAQ
           </Link>
