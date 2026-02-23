@@ -10,9 +10,9 @@ export function SiteFooter() {
             <Image
               src="/images/logo-signature.png"
               alt="Signature"
-              width={140}
-              height={36}
-              className="h-7 w-auto brightness-0 invert"
+              width={200}
+              height={50}
+              className="h-11 w-auto brightness-0 invert"
             />
           </Link>
           <p className="mt-1 text-xs text-muted-foreground">
