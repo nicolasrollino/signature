@@ -1,8 +1,6 @@
 import { SiteHeader } from "@/components/site-header"
 import { HeroSection } from "@/components/hero-section"
 import { ProductGrid } from "@/components/product-grid"
-import { GuaranteeSection } from "@/components/guarantee-section"
-import { FaqSection } from "@/components/faq-section"
 import { SiteFooter } from "@/components/site-footer"
 
 export default function Home() {
