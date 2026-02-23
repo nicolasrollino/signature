@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import type { Metadata } from "next"
 
-const WHATSAPP_NUMBER = "5491112345678"
+const WHATSAPP_NUMBER = "5493515297636"
 
 export async function generateStaticParams() {
   return products.map((p) => ({ id: p.id }))
