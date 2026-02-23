@@ -23,7 +23,7 @@ export function HeroSection() {
           Tecnologia premium al mejor precio
         </h1>
         <p className="mt-6 max-w-xl text-pretty text-base text-muted-foreground lg:text-lg">
-          iPhone, MacBook, PlayStation 5 y accesorios. Productos nuevos y usados con garantia. Envios a todo el pais.
+          iPhone, MacBook, PlayStation 5 y accesorios. Productos nuevos y usados con garantia.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Link
@@ -34,7 +34,7 @@ export function HeroSection() {
             <ArrowRight className="h-4 w-4" />
           </Link>
           <a
-            href="https://wa.me/5491112345678"
+            href="https://wa.me/5493515297636"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground transition-colors hover:bg-border"
