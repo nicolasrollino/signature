@@ -22,7 +22,7 @@ export async function generateMetadata({
   const product = getProductById(id)
   if (!product) return { title: "Producto no encontrado" }
   return {
-    title: `${product.name} - iClub Tech`,
+    title: `${product.name} - Signature`,
     description: product.description,
   }
 }

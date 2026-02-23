@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
 const WHATSAPP_NUMBER = "5491112345678"
-const INSTAGRAM_URL = "https://instagram.com/iclubtech"
+const INSTAGRAM_URL = "https://instagram.com/signature"
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -31,7 +31,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <span className="text-xl font-bold tracking-tight text-foreground">
-            iClub<span className="text-primary">Tech</span>
+            Signa<span className="text-primary">ture</span>
           </span>
         </Link>
 
