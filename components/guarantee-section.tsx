@@ -22,22 +22,7 @@ const features = [
   {
     icon: Shield,
     title: "Compra segura",
-    description:
-      "Operacion directa, clara y sin intermediarios.",
-  },
-]
-  },
-  {
-    icon: RefreshCcw,
-    title: "Devolucion 72hs",
-    description:
-      "Si el producto no cumple con lo descrito, podes devolverlo dentro de las primeras 72 horas.",
-  },
-  {
-    icon: Headphones,
-    title: "Soporte personalizado",
-    description:
-      "Atencion directa por WhatsApp para resolver cualquier duda antes y despues de tu compra.",
+    description: "Operacion directa, clara y sin intermediarios.",
   },
 ]
 
@@ -53,6 +38,7 @@ export function GuaranteeSection() {
             Tu tranquilidad es nuestra prioridad
           </p>
         </div>
+
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (
             <div
@@ -62,8 +48,12 @@ export function GuaranteeSection() {
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                 <feature.icon className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-sm font-semibold text-foreground">{feature.title}</h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+              <h3 className="text-sm font-semibold text-foreground">
+                {feature.title}
+              </h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
