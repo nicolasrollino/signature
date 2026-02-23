@@ -9,15 +9,6 @@ const faqs = [
     answer:
       "Aceptamos transferencia bancaria, Mercado Pago, efectivo y criptomonedas (USDT). Los precios estan publicados en USD y se convierte al tipo de cambio del dia al momento de la compra.",
   },
-  {
-    question: "Los productos usados tienen garantia?",
-    answer:
-      "Si, todos los productos usados cuentan con 6 meses de garantia que cubre defectos de funcionamiento. Los productos nuevos tienen 12 meses de garantia oficial.",
-  },
-  {
-    question: "Como son los envios?",
-    answer:
-      "Realizamos envios a todo el pais mediante correo (OCA, Andreani) o moto mensajeria dentro de Cordoba Capital. El costo de envio depende de la zona y el producto. Tambien podes retirar en nuestra sucursal.",
   },
   {
     question: "Puedo probar el producto antes de comprarlo?",
