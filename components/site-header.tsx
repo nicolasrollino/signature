@@ -5,8 +5,8 @@ import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
-const WHATSAPP_NUMBER = "5491112345678"
-const INSTAGRAM_URL = "https://instagram.com/signature"
+const WHATSAPP_NUMBER = "5493515297636"
+const INSTAGRAM_URL = "https://instagram.com/iphonesignature.cba"
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -58,7 +58,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <a
-            href={INSTAGRAM_URL}
+            href={https://www.instagram.com/iphonesignature.cba/}
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
@@ -67,7 +67,7 @@ export function SiteHeader() {
             <InstagramIcon className="h-5 w-5" />
           </a>
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}`}
+            href={`https://wa.me/${5493515297636}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
