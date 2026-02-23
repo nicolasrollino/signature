@@ -5,8 +5,8 @@ import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
-const WHATSAPP_NUMBER = "5491112345678"
-const INSTAGRAM_URL = "https://instagram.com/signature"
+const WHATSAPP_NUMBER = "5493515297636"
+const INSTAGRAM_URL = "https://instagram.com/iphonesignature.cba";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
