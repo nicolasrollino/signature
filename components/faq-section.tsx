@@ -9,7 +9,6 @@ const faqs = [
     answer:
       "Aceptamos transferencia bancaria, Mercado Pago, efectivo y criptomonedas (USDT). Los precios estan publicados en USD y se convierte al tipo de cambio del dia al momento de la compra.",
   },
-  },
   {
     question: "Puedo probar el producto antes de comprarlo?",
     answer:
@@ -41,6 +40,7 @@ export function FaqSection() {
             Resolvemos tus dudas mas comunes
           </p>
         </div>
+
         <div className="flex flex-col gap-3">
           {faqs.map((faq, i) => (
             <div key={i} className="rounded-xl border border-border bg-card">
@@ -49,16 +49,21 @@ export function FaqSection() {
                 className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
                 aria-expanded={openIndex === i}
               >
-                <span className="text-sm font-medium text-foreground">{faq.question}</span>
+                <span className="text-sm font-medium text-foreground">
+                  {faq.question}
+                </span>
                 <ChevronDown
                   className={`h-4 w-4 shrink-0 text-muted-foreground transition-transform ${
                     openIndex === i ? "rotate-180" : ""
                   }`}
                 />
               </button>
+
               {openIndex === i && (
                 <div className="border-t border-border px-5 py-4">
-                  <p className="text-sm leading-relaxed text-muted-foreground">{faq.answer}</p>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {faq.answer}
+                  </p>
                 </div>
               )}
             </div>
