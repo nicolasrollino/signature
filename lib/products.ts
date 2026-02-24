@@ -13,16 +13,19 @@ export type Product = {
 export const categories = [
   { id: "todos", label: "Todos" },
   { id: "iphone", label: "iPhone" },
+  { id: "samsung", label: "Samsung" },
+  { id: "xiaomi", label: "Xiaomi / Redmi / Poco" },
   { id: "macbook", label: "MacBook" },
   { id: "ipad", label: "iPad" },
   { id: "apple-watch", label: "Apple Watch" },
   { id: "airpods", label: "AirPods" },
   { id: "playstation", label: "PlayStation" },
   { id: "accesorios", label: "Accesorios" },
-  { id: "samsung", label: "Samsung" },
+  
 ]
 
 export const products: Product[] = [
+
     {
     id: "samsung-s25-fe-256",
     name: "Samsung Galaxy S25 FE 8GB 256GB",
