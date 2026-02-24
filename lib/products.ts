@@ -30,7 +30,7 @@ export const products: Product[] = [
   category: "macbook",
   price: 750,
   image: "/images/macbook-air-m1.jpg",
-  condition: "Usado - Como nuevo",
+  condition: "Nuevo",
   stock: 1,
   description: "MacBook Air M1 en excelente estado. Modelo A2337 de 13.3 pulgadas.",
   specs: [
@@ -47,7 +47,7 @@ export const products: Product[] = [
   category: "macbook",
   price: 850,
   image: "/images/macbook-air-m2.jpg",
-  condition: "Usado - Muy bueno",
+  condition: "Nuevo",
   stock: 1,
   description: "MacBook Air M2 con pequeña marca en una esquina. Nueva sin activar.",
   specs: [
