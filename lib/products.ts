@@ -25,6 +25,194 @@ export const categories = [
 
 export const products: Product[] = [
   {
+  id: "ipad-10-256",
+  name: "iPad 10 256GB 10.9\"",
+  category: "ipad",
+  price: 480,
+  image: "/images/ipad-10.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad 10 de 10.9 pulgadas nuevo y sellado.",
+  specs: [
+    "Pantalla: 10.9\"",
+    "Almacenamiento: 256GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-10-64",
+  name: "iPad 10 64GB 10.9\"",
+  category: "ipad",
+  price: 420,
+  image: "/images/ipad-10.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad 10 de 10.9 pulgadas nuevo y sellado.",
+  specs: [
+    "Pantalla: 10.9\"",
+    "Almacenamiento: 64GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-11-512-a16",
+  name: "iPad 11 512GB 10.9\" Chip A16",
+  category: "ipad",
+  price: 720,
+  image: "/images/ipad-11.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad 11 con chip A16, nuevo y sellado.",
+  specs: [
+    "Chip: A16",
+    "Pantalla: 10.9\"",
+    "Almacenamiento: 512GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-9-256",
+  name: "iPad 9 10.2\" 256GB",
+  category: "ipad",
+  price: 440,
+  image: "/images/ipad-9.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad 9 de 10.2 pulgadas nuevo y sellado.",
+  specs: [
+    "Pantalla: 10.2\"",
+    "Almacenamiento: 256GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-9-64",
+  name: "iPad 9 10.2\" 64GB",
+  category: "ipad",
+  price: 390,
+  image: "/images/ipad-9.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad 9 de 10.2 pulgadas nuevo y sellado.",
+  specs: [
+    "Pantalla: 10.2\"",
+    "Almacenamiento: 64GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-air-m2-13-128",
+  name: "iPad Air M2 13\" 128GB",
+  category: "ipad",
+  price: 870,
+  image: "/images/ipad-air-m2.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad Air con chip M2 de 13 pulgadas nuevo y sellado.",
+  specs: [
+    "Chip: Apple M2",
+    "Pantalla: 13\"",
+    "Almacenamiento: 128GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-air-m2-13-256",
+  name: "iPad Air M2 13\" 256GB",
+  category: "ipad",
+  price: 980,
+  image: "/images/ipad-air-m2.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad Air con chip M2 de 13 pulgadas nuevo y sellado.",
+  specs: [
+    "Chip: Apple M2",
+    "Pantalla: 13\"",
+    "Almacenamiento: 256GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-air-m3-13-128",
+  name: "iPad Air M3 13\" 8GB 128GB",
+  category: "ipad",
+  price: 940,
+  image: "/images/ipad-air-m3.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad Air con chip M3 de 13 pulgadas nuevo y sellado.",
+  specs: [
+    "Chip: Apple M3",
+    "RAM: 8GB",
+    "Pantalla: 13\"",
+    "Almacenamiento: 128GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-air-m3-13-256",
+  name: "iPad Air M3 13\" 8GB 256GB",
+  category: "ipad",
+  price: 960,
+  image: "/images/ipad-air-m3.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad Air con chip M3 de 13 pulgadas nuevo y sellado.",
+  specs: [
+    "Chip: Apple M3",
+    "RAM: 8GB",
+    "Pantalla: 13\"",
+    "Almacenamiento: 256GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-mini-7-128",
+  name: "iPad Mini 7 8.3\" 128GB",
+  category: "ipad",
+  price: 520,
+  image: "/images/ipad-mini.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad Mini 7 de 8.3 pulgadas nuevo y sellado.",
+  specs: [
+    "Pantalla: 8.3\"",
+    "Almacenamiento: 128GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-mini-7-256",
+  name: "iPad Mini 7 8.3\" 256GB",
+  category: "ipad",
+  price: 580,
+  image: "/images/ipad-mini.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad Mini 7 de 8.3 pulgadas nuevo y sellado.",
+  specs: [
+    "Pantalla: 8.3\"",
+    "Almacenamiento: 256GB",
+    "Nuevo"
+  ],
+},
+{
+  id: "ipad-pro-m4-11-256",
+  name: "iPad Pro M4 11\" 256GB",
+  category: "ipad",
+  price: 1110,
+  image: "/images/ipad-pro-m4.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "iPad Pro con chip M4 de 11 pulgadas nuevo y sellado.",
+  specs: [
+    "Chip: Apple M4",
+    "Pantalla: 11\"",
+    "Almacenamiento: 256GB",
+    "Nuevo"
+  ],
+},
+  {
   id: "macbook-air-m1-256",
   name: "MacBook Air M1 8CPU 8GB 256GB A2337 13.3\"",
   category: "macbook",
