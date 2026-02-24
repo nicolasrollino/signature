@@ -40,22 +40,7 @@ export const products: Product[] = [
     "SSD: 256GB",
     "Pantalla: 13.3\""
   ],
-},
-{
-  id: "macbook-air-m2-16-256-marca",
-  name: "MacBook Air M2 16GB 256GB 13.6\"",
-  category: "macbook",
-  price: 850,
-  image: "/images/macbook-air-m2.jpg",
-  condition: "Nuevo",
-  stock: 1,
-  description: "MacBook Air M2 con pequeña marca en una esquina. Nueva sin activar.",
-  specs: [
-    "Chip: Apple M2",
-    "RAM: 16GB",
-    "SSD: 256GB",
-    "Pantalla: 13.6\""
-  ],
+
 },
 {
   id: "macbook-air-m2-16-256",
