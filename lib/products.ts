@@ -451,7 +451,7 @@ export const products: Product[] = [
     name: "Samsung Galaxy S25 FE 8GB 256GB",
     category: "samsung",
     price: 720,
-    image: "/images/galaxys25.avif",
+    image: "/images/galaxys25fe.avif",
     condition: "Nuevo",
     stock: 1,
     description:
@@ -469,7 +469,7 @@ export const products: Product[] = [
     name: "Samsung Galaxy S25 FE 8GB 512GB",
     category: "samsung",
     price: 760,
-    image: "/images/galaxys25.avif",
+    image: "/images/galaxys25fe.avif",
     condition: "Nuevo",
     stock: 1,
     description:
