@@ -319,7 +319,7 @@ export const products: Product[] = [
   name: "Samsung Galaxy A06 4GB 128GB",
   category: "samsung",
   price: 140,
-  image: "/images/samsunga06.png",
+  image: "/images/a06.jpg",
   condition: "Nuevo",
   stock: 1,
   description: "Samsung Galaxy A06 nuevo y sellado.",
