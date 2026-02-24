@@ -22,6 +22,72 @@ export const categories = [
 ]
 
 export const products: Product[] = [
+    {
+    id: "iphone-16-128",
+    name: "iPhone 16 128GB",
+    category: "iphone",
+    price: 800,
+    image: "/images/iphone-15-pro.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "iPhone 16 nuevo. Equipo sellado, listo para usar. Consultanos por disponibilidad y colores.",
+    specs: [
+      "Almacenamiento: 128GB",
+      "Condicion: Nuevo",
+      "Equipo sellado",
+    ],
+  },
+  {
+    id: "iphone-16e-512",
+    name: "iPhone 16e 512GB",
+    category: "iphone",
+    price: 950,
+    image: "/images/iphone-15-pro.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "iPhone 16e nuevo. Equipo sellado, gran capacidad de almacenamiento. Consultanos por disponibilidad y colores.",
+    specs: [
+      "Almacenamiento: 512GB",
+      "Condicion: Nuevo",
+      "Equipo sellado",
+    ],
+  },
+  {
+    id: "iphone-17-pro-256-naranja",
+    name: "iPhone 17 Pro 256GB (Naranja)",
+    category: "iphone",
+    price: 1330,
+    image: "/images/iphone-15-pro.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "iPhone 17 Pro nuevo, color naranja. Equipo sellado. Consultanos por disponibilidad.",
+    specs: [
+      "Almacenamiento: 256GB",
+      "Color: Naranja",
+      "Condicion: Nuevo",
+      "Equipo sellado",
+    ],
+  },
+  {
+    id: "iphone-17-pro-max-256-naranja",
+    name: "iPhone 17 Pro Max 256GB (Naranja)",
+    category: "iphone",
+    price: 1420,
+    image: "/images/iphone-15-pro.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "iPhone 17 Pro Max nuevo, color naranja. Equipo sellado. Consultanos por disponibilidad.",
+    specs: [
+      "Almacenamiento: 256GB",
+      "Color: Naranja",
+      "Condicion: Nuevo",
+      "Equipo sellado",
+    ],
+  },
   {
     id: "iphone-15-pro-max-256",
     name: "iPhone 15 Pro Max 256GB",
