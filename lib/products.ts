@@ -81,7 +81,7 @@ export const products: Product[] = [
     id: "samsung-s25-ultra-512",
     name: "Samsung Galaxy S25 Ultra 12GB 512GB",
     category: "samsung",
-    price: 1050,
+    price: 1100,
     image: "/images/samsung-s25-ultra.jpg",
     condition: "Nuevo",
     stock: 1,
