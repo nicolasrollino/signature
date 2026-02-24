@@ -523,7 +523,7 @@ export const products: Product[] = [
     name: "Samsung Galaxy Z Fold 7 5G 12GB 512GB",
     category: "samsung",
     price: 1800,
-    image: "/images/samsung-zfold-7.jpg",
+    image: "/images/zfold7.webp",
     condition: "Nuevo",
     stock: 1,
     description:
