@@ -19,6 +19,7 @@ export const categories = [
   { id: "airpods", label: "AirPods" },
   { id: "playstation", label: "PlayStation" },
   { id: "accesorios", label: "Accesorios" },
+  { id: "samsung", label: "Samsung" },
 ]
 
 export const products: Product[] = [
@@ -244,10 +245,10 @@ export const products: Product[] = [
     id: "ps5-slim-digital",
     name: "PlayStation 5 Slim Digital",
     category: "playstation",
-    price: 399,
+    price: 560,
     image: "/images/ps5-console.jpg",
     condition: "Nuevo",
-    stock: 3,
+    stock: 1,
     description:
       "PlayStation 5 Slim edicion digital, nueva y sellada. Incluye control DualSense, cable HDMI y cable de alimentacion.",
     specs: [
