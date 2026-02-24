@@ -24,6 +24,122 @@ export const categories = [
 ]
 
 export const products: Product[] = [
+  {
+  id: "macbook-air-m1-256",
+  name: "MacBook Air M1 8CPU 8GB 256GB A2337 13.3\"",
+  category: "macbook",
+  price: 750,
+  image: "/images/macbook-air-m1.jpg",
+  condition: "Usado - Como nuevo",
+  stock: 1,
+  description: "MacBook Air M1 en excelente estado. Modelo A2337 de 13.3 pulgadas.",
+  specs: [
+    "Chip: Apple M1",
+    "CPU: 8 Core",
+    "RAM: 8GB",
+    "SSD: 256GB",
+    "Pantalla: 13.3\""
+  ],
+},
+{
+  id: "macbook-air-m2-16-256-marca",
+  name: "MacBook Air M2 16GB 256GB 13.6\"",
+  category: "macbook",
+  price: 850,
+  image: "/images/macbook-air-m2.jpg",
+  condition: "Usado - Muy bueno",
+  stock: 1,
+  description: "MacBook Air M2 con pequeña marca en una esquina. Nueva sin activar.",
+  specs: [
+    "Chip: Apple M2",
+    "RAM: 16GB",
+    "SSD: 256GB",
+    "Pantalla: 13.6\""
+  ],
+},
+{
+  id: "macbook-air-m2-16-256",
+  name: "MacBook Air M2 16GB 256GB 13.6\"",
+  category: "macbook",
+  price: 920,
+  image: "/images/macbook-air-m2.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "MacBook Air M2 nueva y sellada.",
+  specs: [
+    "Chip: Apple M2",
+    "RAM: 16GB",
+    "SSD: 256GB",
+    "Pantalla: 13.6\""
+  ],
+},
+{
+  id: "macbook-air-m2-8-256",
+  name: "MacBook Air M2 8CPU 8GB 256GB A2681 13.6\"",
+  category: "macbook",
+  price: 950,
+  image: "/images/macbook-air-m2.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "MacBook Air M2 modelo A2681 nueva y sellada.",
+  specs: [
+    "Chip: Apple M2",
+    "CPU: 8 Core",
+    "RAM: 8GB",
+    "SSD: 256GB",
+    "Pantalla: 13.6\""
+  ],
+},
+{
+  id: "macbook-air-m3-16-256-15",
+  name: "MacBook Air M3 16GB 256GB 15\"",
+  category: "macbook",
+  price: 1130,
+  image: "/images/macbook-air-m3.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "MacBook Air M3 nueva de 15 pulgadas.",
+  specs: [
+    "Chip: Apple M3",
+    "RAM: 16GB",
+    "SSD: 256GB",
+    "Pantalla: 15\""
+  ],
+},
+{
+  id: "macbook-air-m3-16-512",
+  name: "MacBook Air M3 8CPU 16GB 512GB 13\"",
+  category: "macbook",
+  price: 1180,
+  image: "/images/macbook-air-m3.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "MacBook Air M3 nueva y sellada.",
+  specs: [
+    "Chip: Apple M3",
+    "CPU: 8 Core",
+    "RAM: 16GB",
+    "SSD: 512GB",
+    "Pantalla: 13\""
+  ],
+},
+{
+  id: "macbook-air-m3-8-256",
+  name: "MacBook Air M3 8CPU 8GB 256GB A3113 13\"",
+  category: "macbook",
+  price: 1110,
+  image: "/images/macbook-air-m3.jpg",
+  condition: "Nuevo",
+  stock: 1,
+  description: "MacBook Air M3 modelo A3113 nueva y sellada.",
+  specs: [
+    "Chip: Apple M3",
+    "CPU: 8 Core",
+    "RAM: 8GB",
+    "SSD: 256GB",
+    "Pantalla: 13\""
+  ],
+},
 
   {
   id: "samsung-a06-128",
@@ -312,25 +428,7 @@ export const products: Product[] = [
       "Condicion: Nuevo",
       "Equipo sellado",
     ],
-  },
-  {
-    id: "iphone-15-pro-max-256",
-    name: "iPhone 15 Pro Max 256GB",
-    category: "iphone",
-    price: 1099,
-    image: "/images/iphone-15-pro.jpg",
-    condition: "Usado - Como nuevo",
-    stock: 3,
-    description:
-      "iPhone 15 Pro Max en excelente estado. Titanio Natural, pantalla Super Retina XDR de 6.7 pulgadas, chip A17 Pro, sistema de camara triple de 48MP. Incluye caja original y cable.",
-    specs: [
-      "Pantalla: 6.7\" Super Retina XDR",
-      "Chip: A17 Pro",
-      "Almacenamiento: 256GB",
-      "Camara: Triple 48MP + 12MP + 12MP",
-      "Bateria: Hasta 29h de reproduccion de video",
-      "Color: Titanio Natural",
-    ],
+ 
   },
   {
     id: "iphone-14-pro-128",
@@ -350,63 +448,7 @@ export const products: Product[] = [
       "Bateria: 88% de salud",
       "Color: Blanco",
     ],
-  },
-  {
-    id: "iphone-13-128",
-    name: "iPhone 13 128GB",
-    category: "iphone",
-    price: 499,
-    image: "/images/iphone-15-pro.jpg",
-    condition: "Usado - Bueno",
-    stock: 2,
-    description:
-      "iPhone 13 en buen estado general. Algunas marcas leves de uso en los bordes. Pantalla perfecta. Bateria al 84%.",
-    specs: [
-      "Pantalla: 6.1\" Super Retina XDR",
-      "Chip: A15 Bionic",
-      "Almacenamiento: 128GB",
-      "Camara: Dual 12MP",
-      "Bateria: 84% de salud",
-      "Color: Medianoche",
-    ],
-  },
-  {
-    id: "macbook-air-m2-256",
-    name: "MacBook Air M2 256GB",
-    category: "macbook",
-    price: 899,
-    image: "/images/macbook-air-m2.jpg",
-    condition: "Usado - Como nuevo",
-    stock: 2,
-    description:
-      "MacBook Air con chip M2, practicamente sin uso. Pantalla Liquid Retina de 13.6 pulgadas, 8GB de RAM. Solo 12 ciclos de carga. Incluye caja y cargador original.",
-    specs: [
-      "Pantalla: 13.6\" Liquid Retina",
-      "Chip: Apple M2",
-      "RAM: 8GB",
-      "Almacenamiento: 256GB SSD",
-      "Ciclos de carga: 12",
-      "Color: Medianoche",
-    ],
-  },
-  {
-    id: "macbook-pro-m3-512",
-    name: "MacBook Pro M3 14\" 512GB",
-    category: "macbook",
-    price: 1499,
-    image: "/images/macbook-air-m2.jpg",
-    condition: "Nuevo",
-    stock: 1,
-    description:
-      "MacBook Pro con chip M3, completamente nuevo y sellado. Pantalla Liquid Retina XDR de 14 pulgadas, 18GB de RAM unificada.",
-    specs: [
-      "Pantalla: 14\" Liquid Retina XDR",
-      "Chip: Apple M3",
-      "RAM: 18GB unificada",
-      "Almacenamiento: 512GB SSD",
-      "Puertos: 2x Thunderbolt, HDMI, MagSafe",
-      "Color: Gris Espacial",
-    ],
+  
   },
   {
     id: "ipad-pro-m2-128",
