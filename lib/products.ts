@@ -624,25 +624,6 @@ export const products: Product[] = [
   
   },
   {
-    id: "ipad-pro-m2-128",
-    name: "iPad Pro M2 11\" 128GB",
-    category: "ipad",
-    price: 699,
-    image: "/images/ipad-pro.jpg",
-    condition: "Usado - Como nuevo",
-    stock: 1,
-    description:
-      "iPad Pro 11 pulgadas con chip M2. Pantalla ProMotion 120Hz, compatible con Apple Pencil 2. Incluye caja y cable USB-C.",
-    specs: [
-      "Pantalla: 11\" Liquid Retina 120Hz",
-      "Chip: Apple M2",
-      "Almacenamiento: 128GB",
-      "Camara: 12MP + LiDAR",
-      "Conectividad: Wi-Fi 6E",
-      "Color: Gris Espacial",
-    ],
-  },
-  {
     id: "apple-watch-series-9",
     name: "Apple Watch Series 9 45mm",
     category: "apple-watch",
