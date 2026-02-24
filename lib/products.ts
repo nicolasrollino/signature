@@ -59,7 +59,7 @@ export const products: Product[] = [
   name: "iPad 11 512GB 10.9\" Chip A16",
   category: "ipad",
   price: 720,
-  image: "/images/ipad11-256-a16.jpg",
+  image: "/images/ipad11-256gb-a16.jpg",
   condition: "Nuevo",
   stock: 1,
   description: "iPad 11 con chip A16, nuevo y sellado.",
