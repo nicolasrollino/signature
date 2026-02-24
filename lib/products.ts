@@ -257,7 +257,9 @@ export const products: Product[] = [
       "Salida: 4K a 120fps",
       "Audio 3D Tempest",
       "Control DualSense incluido",
-    ],
+     ],
+  },
+]
 
   
 
