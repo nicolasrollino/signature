@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "Como se realiza el pago?",
     answer:
-      "Aceptamos transferencia bancaria, Mercado Pago, efectivo y criptomonedas (USDT). Los precios estan publicados en USD y se convierte al tipo de cambio del dia al momento de la compra.",
+      "Aceptamos Transferencia bancaria, Mercado Pago, efectivo y criptomonedas (USDT). Los precios estan publicados en USD y se convierte al tipo de cambio del dia al momento de la compra.",
   },
   {
     question: "Puedo probar el producto antes de comprarlo?",
