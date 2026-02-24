@@ -258,65 +258,8 @@ export const products: Product[] = [
       "Audio 3D Tempest",
       "Control DualSense incluido",
     ],
-  },
-  {
-    id: "ps5-disc-edition",
-    name: "PlayStation 5 con Lector",
-    category: "playstation",
-    price: 499,
-    image: "/images/ps5-console.jpg",
-    condition: "Usado - Como nuevo",
-    stock: 2,
-    description:
-      "PlayStation 5 con lector de discos en perfecto estado. Poco uso, con caja original, control DualSense y todos los cables.",
-    specs: [
-      "Almacenamiento: 825GB SSD",
-      "GPU: AMD RDNA 2",
-      "CPU: AMD Zen 2, 8 nucleos",
-      "Lector de Blu-ray Ultra HD",
-      "Salida: 4K a 120fps",
-      "2 controles DualSense",
-    ],
-  },
-  {
-    id: "cargador-magsafe",
-    name: "Cargador MagSafe Apple",
-    category: "accesorios",
-    price: 39,
-    image: "/images/airpods-pro.jpg",
-    condition: "Nuevo",
-    stock: 15,
-    description:
-      "Cargador MagSafe original de Apple. Carga inalambrica rapida para iPhone 12 en adelante. Compatible con fundas MagSafe.",
-    specs: [
-      "Carga inalambrica: hasta 15W",
-      "Compatible: iPhone 12+",
-      "Conector: USB-C",
-      "Alineacion magnetica",
-      "Original Apple",
-      "Cable de 1 metro",
-    ],
-  },
-  {
-    id: "funda-silicona-iphone15",
-    name: "Funda Silicona iPhone 15 Pro",
-    category: "accesorios",
-    price: 29,
-    image: "/images/airpods-pro.jpg",
-    condition: "Nuevo",
-    stock: 20,
-    description:
-      "Funda de silicona original Apple para iPhone 15 Pro. Interior de microfibra suave, exterior de silicona suave al tacto. Compatible con MagSafe.",
-    specs: [
-      "Material: Silicona suave",
-      "Interior: Microfibra",
-      "Compatible: MagSafe",
-      "Modelo: iPhone 15 Pro",
-      "Original Apple",
-      "Color: Medianoche",
-    ],
-  },
-]
+
+  
 
 export function getProductById(id: string): Product | undefined {
   return products.find((p) => p.id === id)
