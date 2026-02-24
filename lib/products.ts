@@ -541,7 +541,7 @@ export const products: Product[] = [
     name: "iPhone 16 128GB",
     category: "iphone",
     price: 800,
-    image: "/images/iphone-15-pro.jpg",
+    image: "/images/iphone16.jpg",
     condition: "Nuevo",
     stock: 1,
     description:
@@ -557,7 +557,7 @@ export const products: Product[] = [
     name: "iPhone 16e 512GB",
     category: "iphone",
     price: 950,
-    image: "/images/iphone-15-pro.jpg",
+    image: "/images/iphone16e.jpg",
     condition: "Nuevo",
     stock: 1,
     description:
@@ -573,7 +573,7 @@ export const products: Product[] = [
     name: "iPhone 17 Pro 256GB (Naranja)",
     category: "iphone",
     price: 1330,
-    image: "/images/iphone-15-pro.jpg",
+    image: "/images/iphone17pro.jpg",
     condition: "Nuevo",
     stock: 1,
     description:
@@ -590,7 +590,7 @@ export const products: Product[] = [
     name: "iPhone 17 Pro Max 256GB (Naranja)",
     category: "iphone",
     price: 1420,
-    image: "/images/iphone-15-pro.jpg",
+    image: "/images/iphone17promax.jpg",
     condition: "Nuevo",
     stock: 1,
     description:
