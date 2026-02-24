@@ -186,7 +186,7 @@ export const products: Product[] = [
   name: "iPad Mini 7 8.3\" 256GB",
   category: "ipad",
   price: 580,
-  image: "/images/ipadmini-256.jpg",
+  image: "/images/ipadmini-256gb.jpg",
   condition: "Nuevo",
   stock: 1,
   description: "iPad Mini 7 de 8.3 pulgadas nuevo y sellado.",
