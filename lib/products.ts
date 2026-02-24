@@ -374,7 +374,7 @@ export const products: Product[] = [
   name: "Samsung Galaxy A16 4GB 128GB",
   category: "samsung",
   price: 158,
-  image: "/images/a161.avif",
+  image: "/images/a16eee.webp",
   condition: "Nuevo",
   stock: 1,
   description: "Samsung Galaxy A16 nuevo y sellado.",
