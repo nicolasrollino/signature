@@ -24,6 +24,96 @@ export const categories = [
 
 export const products: Product[] = [
     {
+    id: "samsung-s25-fe-256",
+    name: "Samsung Galaxy S25 FE 8GB 256GB",
+    category: "samsung",
+    price: 720,
+    image: "/images/samsung-s25-fe.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "Samsung Galaxy S25 FE nuevo y sellado. Excelente rendimiento y gran capacidad de almacenamiento.",
+    specs: [
+      "RAM: 8GB",
+      "Almacenamiento: 256GB",
+      "Condicion: Nuevo",
+      "Pantalla AMOLED",
+      "Equipo sellado",
+    ],
+  },
+  {
+    id: "samsung-s25-fe-512",
+    name: "Samsung Galaxy S25 FE 8GB 512GB",
+    category: "samsung",
+    price: 760,
+    image: "/images/samsung-s25-fe.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "Samsung Galaxy S25 FE nuevo y sellado. Version de 512GB ideal para quienes necesitan mayor capacidad.",
+    specs: [
+      "RAM: 8GB",
+      "Almacenamiento: 512GB",
+      "Condicion: Nuevo",
+      "Pantalla AMOLED",
+      "Equipo sellado",
+    ],
+  },
+  {
+    id: "samsung-s25-ultra-256",
+    name: "Samsung Galaxy S25 Ultra 12GB 256GB",
+    category: "samsung",
+    price: 1050,
+    image: "/images/samsung-s25-ultra.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "Samsung Galaxy S25 Ultra nuevo y sellado. Maximo rendimiento y camara profesional.",
+    specs: [
+      "RAM: 12GB",
+      "Almacenamiento: 256GB",
+      "Condicion: Nuevo",
+      "Pantalla Dynamic AMOLED",
+      "Camara avanzada",
+    ],
+  },
+  {
+    id: "samsung-s25-ultra-512",
+    name: "Samsung Galaxy S25 Ultra 12GB 512GB",
+    category: "samsung",
+    price: 1050,
+    image: "/images/samsung-s25-ultra.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "Samsung Galaxy S25 Ultra nuevo y sellado. Version de 512GB para almacenamiento superior.",
+    specs: [
+      "RAM: 12GB",
+      "Almacenamiento: 512GB",
+      "Condicion: Nuevo",
+      "Pantalla Dynamic AMOLED",
+      "Camara avanzada",
+    ],
+  },
+  {
+    id: "samsung-zfold-7-512",
+    name: "Samsung Galaxy Z Fold 7 5G 12GB 512GB",
+    category: "samsung",
+    price: 1800,
+    image: "/images/samsung-zfold-7.jpg",
+    condition: "Nuevo",
+    stock: 1,
+    description:
+      "Samsung Galaxy Z Fold 7 5G nuevo y sellado. Dispositivo plegable premium con gran pantalla y alto rendimiento.",
+    specs: [
+      "RAM: 12GB",
+      "Almacenamiento: 512GB",
+      "5G",
+      "Pantalla plegable AMOLED",
+      "Equipo sellado",
+    ],
+  },
+    {
     id: "iphone-16-128",
     name: "iPhone 16 128GB",
     category: "iphone",
