@@ -44,7 +44,7 @@ export const products: Product[] = [
   name: "iPad 10 64GB 10.9\"",
   category: "ipad",
   price: 420,
-  image: "/images/ipad10-64.jpg",
+  image: "/images/ipad10-64gb.jpg",
   condition: "Nuevo",
   stock: 1,
   description: "iPad 10 de 10.9 pulgadas nuevo y sellado.",
