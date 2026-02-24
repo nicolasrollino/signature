@@ -201,7 +201,7 @@ export const products: Product[] = [
   name: "iPad Pro M4 11\" 256GB",
   category: "ipad",
   price: 1110,
-  image: "/images/ipad-pro-m4.jpg",
+  image: "/images/ipad-m4-11.jpg",
   condition: "Nuevo",
   stock: 1,
   description: "iPad Pro con chip M4 de 11 pulgadas nuevo y sellado.",
