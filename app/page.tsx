@@ -1,4 +1,4 @@
-import WhatsAppFloating from "@/components/WhatsAppFloating"
+import WhatsAppFloating from "@/components/components/WhatsAppFloating"
 import { SiteHeader } from "@/components/site-header"
 import { HeroSection } from "@/components/hero-section"
 import { ProductGrid } from "@/components/product-grid"
