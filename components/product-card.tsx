@@ -25,18 +25,19 @@ function categoryLabel(category: string) {
   switch (category) {
     case "iphone":
       return "iPhone"
+
     case "samsung":
       return "Samsung"
+
     case "ipad":
       return "iPad"
+
     case "macbook":
       return "MacBook"
-    case "apple-watch":
-      return "Apple Watch"
-    case "airpods":
-      return "AirPods"
+
     case "playstation":
       return "PlayStation"
+
     default:
       return category
   }
@@ -45,9 +46,9 @@ function categoryLabel(category: string) {
 export function ProductCard({ product }: { product: Product }) {
   return (
     <Link
-  href={`/producto/${product.id}`}
-  className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
->
+      href={`/producto/${product.id}`}
+      className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
+    >
       {/* IMAGE */}
       <div className="relative aspect-square overflow-hidden bg-secondary">
         <Image
@@ -62,13 +63,13 @@ export function ProductCard({ product }: { product: Product }) {
         <div className="absolute left-3 top-3 flex flex-col gap-1.5">
 
           {/* categoria */}
-          <span className="inline-flex rounded-md bg-black/60 px-2.5 py-1 text-xs font-medium text-white backdrop-blur">
+          <span className="inline-flex rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur">
             {categoryLabel(product.category)}
           </span>
 
           {/* condicion */}
           <span
-            className={`inline-flex rounded-md px-2.5 py-1 text-xs font-medium ${conditionColor(
+            className={`inline-flex rounded-full px-3 py-1 text-xs font-medium ${conditionColor(
               product.condition
             )}`}
           >
@@ -76,12 +77,15 @@ export function ProductCard({ product }: { product: Product }) {
           </span>
 
         </div>
+
+        {/* gradient premium */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/15 to-transparent" />
       </div>
 
       {/* INFO */}
       <div className="flex flex-1 flex-col gap-2 p-4">
 
-        <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors">
+        <h3 className="line-clamp-2 text-sm font-semibold text-foreground transition-colors group-hover:text-primary">
           {product.name}
         </h3>
 
