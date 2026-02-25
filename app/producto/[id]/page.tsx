@@ -212,19 +212,28 @@ export default async function ProductPage({
                 Ver más productos
               </Link>
 
-              {/* Trust badges */}
-              <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
-                <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <Shield className="h-4 w-4 text-primary" />
-                  {product.condition === "Nuevo"
-                    ? "12 meses de garantia"
-                    : "6 meses de garantia"}
-                </div>
-                <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <Truck className="h-4 w-4 text-primary" />
-                  Envio a todo el pais
-                </div>
-              </div>
+            {/* Info */}
+<div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
+  <div className="flex items-center gap-3 text-sm text-muted-foreground">
+    <Check className="h-4 w-4 text-primary" />
+    📍 Entrega en Córdoba Capital
+  </div>
+
+  <div className="flex items-center gap-3 text-sm text-muted-foreground">
+    <Check className="h-4 w-4 text-primary" />
+    Equipos originales y verificados
+  </div>
+
+  <div className="flex items-center gap-3 text-sm text-muted-foreground">
+    <Check className="h-4 w-4 text-primary" />
+    Se puede probar al momento de la entrega
+  </div>
+
+  <div className="flex items-center gap-3 text-sm text-muted-foreground">
+    <Check className="h-4 w-4 text-primary" />
+    Coordinación por WhatsApp
+  </div>
+</div>
             </div>
           </div>
         </div>
