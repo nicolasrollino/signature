@@ -90,8 +90,10 @@ export function ProductCard({ product }: { product: Product }) {
         </h3>
 
         <p className="text-xl font-bold text-foreground">
-          USD {product.price.toLocaleString("es-AR")}
-        </p>
+  {product.category === "accesorios"
+    ? `$ ${product.price.toLocaleString("es-AR")}`
+    : `USD ${product.price.toLocaleString("es-AR")}`}
+</p>
 
       </div>
     </Link>
