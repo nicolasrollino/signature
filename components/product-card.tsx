@@ -45,9 +45,9 @@ function categoryLabel(category: string) {
 export function ProductCard({ product }: { product: Product }) {
   return (
     <Link
-      href={`/producto/${product.id}`}
-      className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
-    >
+  href={`/producto/${product.id}`}
+  className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
+>
       {/* IMAGE */}
       <div className="relative aspect-square overflow-hidden bg-secondary">
         <Image
