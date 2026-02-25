@@ -56,6 +56,25 @@ function conditionColor(condition: string): string {
   }
 }
 
+function categoryLabel(category: string) {
+  switch (category) {
+    case "iphone":
+      return "iPhone"
+    case "samsung":
+      return "Samsung"
+    case "ipad":
+      return "iPad"
+    case "macbook":
+      return "MacBook"
+    case "playstation":
+      return "PlayStation"
+    case "accesorios":
+      return "Accesorios"
+    default:
+      return category
+  }
+}
+
 export default async function ProductPage({
   params,
 }: {
@@ -67,8 +86,11 @@ export default async function ProductPage({
 
   const inStock = product.stock > 0
 
+  const isAccesorio = product.category === "accesorios"
+  const currencyLabel = isAccesorio ? "ARS" : "USD"
+
   const whatsappMessage = encodeURIComponent(
-    `Hola! Quiero el ${product.name} (USD ${product.price}).\n` +
+    `Hola! Quiero el ${product.name} (${currencyLabel} ${product.price.toLocaleString("es-AR")}).\n` +
       `Condición: ${product.condition}.\n\n` +
       `¿Lo puedo retirar hoy? ¿Qué medios de pago aceptan?`
   )
@@ -121,10 +143,7 @@ export default async function ProductPage({
             <div className="flex flex-col gap-6">
               <div>
                 <p className="mb-2 text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                  {product.category === "playstation"
-                    ? "PlayStation"
-                    : product.category.charAt(0).toUpperCase() +
-                      product.category.slice(1)}
+                  {categoryLabel(product.category)}
                 </p>
 
                 <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
@@ -134,7 +153,7 @@ export default async function ProductPage({
 
               <div className="flex items-baseline gap-3">
                 <span className="text-3xl font-bold text-foreground">
-                  USD {product.price.toLocaleString("es-AR")}
+                  {currencyLabel} {product.price.toLocaleString("es-AR")}
                 </span>
 
                 <span
