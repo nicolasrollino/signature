@@ -646,7 +646,7 @@ export const products: Product[] = [
   name: "Cargador MAXXA USB-C 20W Carga Rápida",
   category: "accesorios",
   price: 12000,
-  image: "/images/maxxa-20w.png",
+  image: "/images/123.jpg",
   condition: "Nuevo",
   stock: 10,
   description:
@@ -665,7 +665,7 @@ export const products: Product[] = [
   name: "Cable MAXXA USB-C a USB-C 65W Carga Rápida",
   category: "accesorios",
   price: 7500,
-  image: "/images/maxxa-usbc-usbc.jpg",
+  image: "/images/1234.jpg",
   condition: "Nuevo",
   stock: 10,
   description:
@@ -683,7 +683,7 @@ export const products: Product[] = [
   name: "Cable MAXXA USB-C a Lightning Carga Rápida",
   category: "accesorios",
   price: 7500,
-  image: "/images/maxxa-lightning.jpg",
+  image: "/images/12345.jpg",
   condition: "Nuevo",
   stock: 10,
   description:
@@ -700,7 +700,7 @@ export const products: Product[] = [
   name: "Cargador de Auto MAXXA USB-C Carga Rápida",
   category: "accesorios",
   price: 15000,
-  image: "/images/maxxa-auto.jpg",
+  image: "/images/123456.jpg",
   condition: "Nuevo",
   stock: 10,
   description:
