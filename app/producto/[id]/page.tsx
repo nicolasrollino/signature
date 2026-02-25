@@ -1,15 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, Check, MessageCircle, Shield, Truck } from "lucide-react"
+import { ArrowLeft, Check, MessageCircle } from "lucide-react"
 import { getProductById, products } from "@/lib/products"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import type { Metadata } from "next"
 
 const WHATSAPP_NUMBER = "5493515297636"
-
-// 👇 Esto ayuda a que OpenGraph use URLs absolutas correctamente
 const SITE_URL = "https://signaturecba.vercel.app"
 
 export async function generateStaticParams() {
@@ -47,16 +45,12 @@ function conditionColor(condition: string): string {
   switch (condition) {
     case "Nuevo":
       return "bg-green-500/15 text-green-400 border border-green-500/30"
-
     case "Usado - Como nuevo":
       return "bg-blue-500/15 text-blue-400 border border-blue-500/30"
-
     case "Usado - Muy bueno":
       return "bg-amber-500/15 text-amber-400 border border-amber-500/30"
-
     case "Usado - Bueno":
       return "bg-orange-500/15 text-orange-400 border border-orange-500/30"
-
     default:
       return "bg-muted text-muted-foreground"
   }
@@ -73,11 +67,9 @@ export default async function ProductPage({
 
   const inStock = product.stock > 0
 
-  // ✅ Mensaje WhatsApp más "cerrador"
   const whatsappMessage = encodeURIComponent(
     `Hola! Quiero el ${product.name} (USD ${product.price}).\n` +
-      `Condición: ${product.condition}.\n` +
-      `Stock: ${product.stock}.\n\n` +
+      `Condición: ${product.condition}.\n\n` +
       `¿Lo puedo retirar hoy? ¿Qué medios de pago aceptan?`
   )
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`
@@ -97,16 +89,19 @@ export default async function ProductPage({
           </Link>
 
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
-            {/* Image */}
+            {/* Image (toca para ampliar) */}
             <div className="relative aspect-square overflow-hidden rounded-xl border border-border bg-secondary">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+              <a href={product.image} target="_blank" rel="noreferrer">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </a>
+
               <div className="absolute left-4 top-4">
                 <span
                   className={`inline-flex rounded-md px-3 py-1.5 text-xs font-medium ${conditionColor(
@@ -115,6 +110,10 @@ export default async function ProductPage({
                 >
                   {product.condition}
                 </span>
+              </div>
+
+              <div className="pointer-events-none absolute bottom-4 left-4 rounded-full bg-black/60 px-3 py-1 text-xs text-white">
+                Toca para ampliar
               </div>
             </div>
 
@@ -127,6 +126,7 @@ export default async function ProductPage({
                     : product.category.charAt(0).toUpperCase() +
                       product.category.slice(1)}
                 </p>
+
                 <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
                   {product.name}
                 </h1>
@@ -134,8 +134,7 @@ export default async function ProductPage({
 
               <div className="flex items-baseline gap-3">
                 <span className="text-3xl font-bold text-foreground">
-                  {"USD "}
-                  {product.price.toLocaleString("es-AR")}
+                  USD {product.price.toLocaleString("es-AR")}
                 </span>
 
                 <span
@@ -143,11 +142,10 @@ export default async function ProductPage({
                     inStock ? "text-primary" : "text-destructive"
                   }`}
                 >
-                  {inStock ? `${product.stock} en stock` : "Sin stock"}
+                  {inStock ? "Disponible" : "Sin stock"}
                 </span>
               </div>
 
-              {/* ✅ Entrega inmediata */}
               {inStock && (
                 <p className="text-sm font-medium text-green-500">
                   ✅ Entrega inmediata
@@ -176,7 +174,7 @@ export default async function ProductPage({
                 </ul>
               </div>
 
-              {/* ✅ Qué incluye */}
+              {/* Qué incluye */}
               <div className="rounded-xl border border-border bg-card p-5">
                 <h3 className="mb-3 text-sm font-semibold text-foreground">
                   ¿Qué incluye?
@@ -208,7 +206,7 @@ export default async function ProductPage({
                 Consultar por WhatsApp
               </a>
 
-              {/* ✅ Botón volver (para no scrollear) */}
+              {/* Volver */}
               <Link
                 href="/#productos"
                 className="inline-flex items-center justify-center rounded-xl border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground hover:bg-secondary"
@@ -216,28 +214,28 @@ export default async function ProductPage({
                 Ver más productos
               </Link>
 
-            {/* Info */}
-<div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
-  <div className="flex items-center gap-3 text-sm text-muted-foreground">
-    <Check className="h-4 w-4 text-primary" />
-     Entrega en Córdoba Capital
-  </div>
+              {/* Info */}
+              <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
+                <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <Check className="h-4 w-4 text-primary" />
+                  Entrega en Córdoba Capital
+                </div>
 
-  <div className="flex items-center gap-3 text-sm text-muted-foreground">
-    <Check className="h-4 w-4 text-primary" />
-    Equipos originales y verificados
-  </div>
+                <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <Check className="h-4 w-4 text-primary" />
+                  Equipos originales y verificados
+                </div>
 
-  <div className="flex items-center gap-3 text-sm text-muted-foreground">
-    <Check className="h-4 w-4 text-primary" />
-    Se puede probar al momento de la entrega
-  </div>
+                <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <Check className="h-4 w-4 text-primary" />
+                  Se puede probar al momento de la entrega
+                </div>
 
-  <div className="flex items-center gap-3 text-sm text-muted-foreground">
-    <Check className="h-4 w-4 text-primary" />
-    Coordinación por WhatsApp
-  </div>
-</div>
+                <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                  <Check className="h-4 w-4 text-primary" />
+                  Coordinación por WhatsApp
+                </div>
+              </div>
             </div>
           </div>
         </div>
