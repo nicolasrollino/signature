@@ -46,13 +46,17 @@ export async function generateMetadata({
 function conditionColor(condition: string): string {
   switch (condition) {
     case "Nuevo":
-      return "bg-foreground/10 text-foreground"
+      return "bg-green-500/15 text-green-400 border border-green-500/30"
+
     case "Usado - Como nuevo":
-      return "bg-blue-500/15 text-blue-400"
+      return "bg-blue-500/15 text-blue-400 border border-blue-500/30"
+
     case "Usado - Muy bueno":
-      return "bg-amber-500/15 text-amber-400"
+      return "bg-amber-500/15 text-amber-400 border border-amber-500/30"
+
     case "Usado - Bueno":
-      return "bg-orange-500/15 text-orange-400"
+      return "bg-orange-500/15 text-orange-400 border border-orange-500/30"
+
     default:
       return "bg-muted text-muted-foreground"
   }
