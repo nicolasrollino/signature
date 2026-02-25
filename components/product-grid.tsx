@@ -1,20 +1,45 @@
 "use client"
 
-import { useState, useMemo } from "react"
+import { useMemo, useState } from "react"
 import { Search, SlidersHorizontal, X } from "lucide-react"
 import { products, categories } from "@/lib/products"
 import { ProductCard } from "@/components/product-card"
 
+function sectionSubtitle(categoryId: string) {
+  switch (categoryId) {
+    case "iphone":
+      return "Modelos nuevos y usados verificados."
+    case "samsung":
+      return "Gama A y S, listo para usar."
+    case "ipad":
+      return "Para estudiar, laburar y entretenimiento."
+    case "macbook":
+      return "Potencia y portabilidad para todo."
+    case "playstation":
+      return "Consolas para jugar al máximo."
+    default:
+      return "Elegí el que más te guste."
+  }
+}
+
 export function ProductGrid() {
   const [activeCategory, setActiveCategory] = useState("todos")
   const [searchQuery, setSearchQuery] = useState("")
-  const [sortBy, setSortBy] = useState<"default" | "price-asc" | "price-desc">("default")
+  const [sortBy, setSortBy] = useState<"default" | "price-asc" | "price-desc">(
+    "default"
+  )
   const [showFilters, setShowFilters] = useState(false)
 
+  const categorySections = useMemo(
+    () => categories.filter((c) => c.id !== "todos"),
+    []
+  )
+
   const filteredProducts = useMemo(() => {
-    let result = activeCategory === "todos"
-      ? products
-      : products.filter((p) => p.category === activeCategory)
+    let result =
+      activeCategory === "todos"
+        ? products
+        : products.filter((p) => p.category === activeCategory)
 
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase()
@@ -33,6 +58,16 @@ export function ProductGrid() {
 
     return result
   }, [activeCategory, searchQuery, sortBy])
+
+  const groupedByCategory = useMemo(() => {
+    const map = new Map<string, typeof products>()
+    for (const p of filteredProducts) {
+      const arr = map.get(p.category) ?? []
+      arr.push(p)
+      map.set(p.category, arr)
+    }
+    return map
+  }, [filteredProducts])
 
   return (
     <section id="productos" className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
@@ -62,6 +97,7 @@ export function ProductGrid() {
               </button>
             )}
           </div>
+
           <div className="flex items-center gap-2">
             <button
               onClick={() => setShowFilters(!showFilters)}
@@ -70,6 +106,7 @@ export function ProductGrid() {
               <SlidersHorizontal className="h-4 w-4" />
               Filtros
             </button>
+
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as typeof sortBy)}
@@ -83,7 +120,11 @@ export function ProductGrid() {
         </div>
 
         {/* Category filters */}
-        <div className={`flex flex-wrap gap-2 ${showFilters ? "flex" : "hidden sm:flex"}`}>
+        <div
+          className={`flex flex-wrap gap-2 ${
+            showFilters ? "flex" : "hidden sm:flex"
+          }`}
+        >
           {categories.map((cat) => (
             <button
               key={cat.id}
@@ -100,17 +141,13 @@ export function ProductGrid() {
         </div>
       </div>
 
-      {/* Product grid */}
-      {filteredProducts.length > 0 ? (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      ) : (
+      {/* CONTENIDO */}
+      {filteredProducts.length === 0 ? (
         <div className="flex flex-col items-center gap-3 py-20">
           <Search className="h-10 w-10 text-muted-foreground" />
-          <p className="text-lg font-medium text-foreground">No se encontraron productos</p>
+          <p className="text-lg font-medium text-foreground">
+            No se encontraron productos
+          </p>
           <p className="text-sm text-muted-foreground">
             Intenta con otro termino de busqueda o categoria.
           </p>
@@ -123,6 +160,56 @@ export function ProductGrid() {
           >
             Ver todos los productos
           </button>
+        </div>
+      ) : activeCategory === "todos" ? (
+        // ✅ SECCIONES POR CATEGORÍA CON BANNER
+        <div className="space-y-12">
+          {categorySections.map((cat) => {
+            const items = groupedByCategory.get(cat.id) ?? []
+            if (items.length === 0) return null
+
+            // Mostramos 6 por sección (podés bajar a 4 si querés)
+            const preview = items.slice(0, 6)
+
+            return (
+              <div key={cat.id} className="space-y-4">
+                {/* BANNER */}
+                <div className="rounded-2xl border border-border bg-secondary p-6 sm:p-8">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <h3 className="text-2xl font-bold tracking-tight text-foreground">
+                        {cat.label}
+                      </h3>
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {sectionSubtitle(cat.id)}
+                      </p>
+                    </div>
+
+                    <button
+                      onClick={() => setActiveCategory(cat.id)}
+                      className="inline-flex h-10 items-center justify-center rounded-xl bg-primary px-4 text-sm font-semibold text-primary-foreground hover:opacity-90"
+                    >
+                      Ver todos
+                    </button>
+                  </div>
+                </div>
+
+                {/* GRID */}
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                  {preview.map((product) => (
+                    <ProductCard key={product.id} product={product} />
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+      ) : (
+        // ✅ GRID NORMAL PARA UNA CATEGORÍA ESPECÍFICA
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
         </div>
       )}
     </section>
