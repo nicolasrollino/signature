@@ -646,7 +646,7 @@ export const products: Product[] = [
   name: "Cargador MAXXA USB-C 20W Carga Rápida",
   category: "accesorios",
   price: 12000,
-  image: "/images/maxxa-20w.jpg",
+  image: "/images/maxxa-20w.png",
   condition: "Nuevo",
   stock: 10,
   description:
