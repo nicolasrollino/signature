@@ -55,23 +55,13 @@ export function ProductCard({ product }: { product: Product }) {
       className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl"
     >
       {/* IMAGE */}
-      <div
-  className={`relative aspect-square overflow-hidden ${
-    product.category === "accesorios"
-      ? "bg-white"
-      : "bg-secondary"
-  }`}
->
+      <div className="relative aspect-square overflow-hidden bg-secondary">
 
         <Image
           src={product.image}
           alt={product.name}
           fill
-          className={`transition-transform duration-700 group-hover:scale-105 ${
-            isAccessory
-              ? "object-contain p-6"
-              : "object-cover"
-          }`}
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
 
