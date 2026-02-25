@@ -216,7 +216,7 @@ export default async function ProductPage({
 <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-5">
   <div className="flex items-center gap-3 text-sm text-muted-foreground">
     <Check className="h-4 w-4 text-primary" />
-    📍 Entrega en Córdoba Capital
+     Entrega en Córdoba Capital
   </div>
 
   <div className="flex items-center gap-3 text-sm text-muted-foreground">
