@@ -43,8 +43,6 @@ function categoryLabel(category: string) {
 }
 
 export function ProductCard({ product }: { product: Product }) {
-  const inStock = product.stock > 0
-
   return (
     <Link
       href={`/producto/${product.id}`}
@@ -78,45 +76,19 @@ export function ProductCard({ product }: { product: Product }) {
           </span>
 
         </div>
-
-        {/* SIN STOCK */}
-        {!inStock && (
-          <div className="absolute inset-0 flex items-center justify-center bg-background/70">
-            <span className="rounded-lg bg-destructive/90 px-4 py-2 text-sm font-semibold text-destructive-foreground">
-              Sin stock
-            </span>
-          </div>
-        )}
       </div>
 
       {/* INFO */}
       <div className="flex flex-1 flex-col gap-2 p-4">
+
         <h3 className="text-sm font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors">
           {product.name}
         </h3>
 
-        {/* stock info */}
-        {inStock && product.stock === 1 && (
-          <span className="text-xs font-semibold text-amber-500">
-            Última unidad
-          </span>
-        )}
+        <p className="text-xl font-bold text-foreground">
+          USD {product.price.toLocaleString("es-AR")}
+        </p>
 
-        <div className="mt-auto flex items-end justify-between">
-          <p className="text-xl font-bold text-foreground">
-            USD {product.price.toLocaleString("es-AR")}
-          </p>
-
-          <span
-            className={`text-xs font-medium ${
-              inStock ? "text-primary" : "text-destructive"
-            }`}
-          >
-            {inStock
-              ? `${product.stock} disponible${product.stock > 1 ? "s" : ""}`
-              : "Agotado"}
-          </span>
-        </div>
       </div>
     </Link>
   )
