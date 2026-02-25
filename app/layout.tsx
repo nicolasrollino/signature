@@ -7,7 +7,7 @@ const _inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Signature - Tecnologia Premium',
-  description: 'Venta de iPhones, MacBooks, PlayStation 5 y accesorios. Productos nuevos y usados con garantia.',
+  description: 'Venta de Iphone, Samsung, MacBooks, PlayStation 5 y accesorios. Productos nuevos y usados.',
 }
 
 export const viewport: Viewport = {
