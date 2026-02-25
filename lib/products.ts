@@ -641,11 +641,11 @@ export const products: Product[] = [
       "Control DualSense incluido",
      ],
   },
-  {
+{
   id: "maxxa-cargador-20w",
   name: "Cargador MAXXA USB-C 20W Carga Rápida",
   category: "accesorios",
-  price: 12.000,
+  price: 12000,
   image: "/images/maxxa-20w.jpg",
   condition: "Nuevo",
   stock: 10,
@@ -657,7 +657,6 @@ export const products: Product[] = [
     "Tecnología: Carga rápida",
     "Compatible: iPhone, Samsung, iPad y más",
     "Marca: MAXXA",
-    "Condición: Nuevo",
   ],
 },
 
@@ -665,7 +664,7 @@ export const products: Product[] = [
   id: "maxxa-cable-usbc-usbc-65w",
   name: "Cable MAXXA USB-C a USB-C 65W Carga Rápida",
   category: "accesorios",
-  price: 7.500,
+  price: 7500,
   image: "/images/maxxa-usbc-usbc.jpg",
   condition: "Nuevo",
   stock: 10,
@@ -674,10 +673,8 @@ export const products: Product[] = [
   specs: [
     "Tipo: USB-C a USB-C",
     "Potencia máxima: 65W",
-    "Carga rápida compatible",
     "Compatible: Samsung, iPad, MacBook y más",
     "Marca: MAXXA",
-    "Condición: Nuevo",
   ],
 },
 
@@ -685,19 +682,16 @@ export const products: Product[] = [
   id: "maxxa-cable-lightning",
   name: "Cable MAXXA USB-C a Lightning Carga Rápida",
   category: "accesorios",
-  price: 7.500,
+  price: 7500,
   image: "/images/maxxa-lightning.jpg",
   condition: "Nuevo",
   stock: 10,
   description:
-    "Cable MAXXA USB-C a Lightning compatible con carga rápida para iPhone y dispositivos Apple. Material resistente y conexión segura.",
+    "Cable MAXXA USB-C a Lightning compatible con carga rápida para iPhone y dispositivos Apple.",
   specs: [
     "Tipo: USB-C a Lightning",
-    "Carga rápida compatible",
     "Compatible: iPhone, AirPods, iPad",
-    "Alta durabilidad",
     "Marca: MAXXA",
-    "Condición: Nuevo",
   ],
 },
 
@@ -705,19 +699,16 @@ export const products: Product[] = [
   id: "maxxa-cargador-auto-usbc",
   name: "Cargador de Auto MAXXA USB-C Carga Rápida",
   category: "accesorios",
-  price: 15.000,
+  price: 15000,
   image: "/images/maxxa-auto.jpg",
   condition: "Nuevo",
   stock: 10,
   description:
-    "Cargador de auto MAXXA con puerto USB-C de carga rápida. Ideal para cargar tu celular mientras manejas.",
+    "Cargador de auto MAXXA con puerto USB-C de carga rápida.",
   specs: [
     "Tipo: Cargador para auto",
     "Puerto: USB-C",
-    "Carga rápida",
-    "Compatible: iPhone, Samsung y más",
     "Marca: MAXXA",
-    "Condición: Nuevo",
   ],
 },
 ]
