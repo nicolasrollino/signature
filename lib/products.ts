@@ -16,8 +16,6 @@ export const categories = [
   { id: "samsung", label: "Samsung" },
   { id: "macbook", label: "MacBook" },
   { id: "ipad", label: "iPad" },
-  { id: "apple-watch", label: "Apple Watch" },
-  { id: "airpods", label: "AirPods" },
   { id: "playstation", label: "PlayStation" },
   { id: "accesorios", label: "Accesorios" },
   
@@ -623,44 +621,7 @@ export const products: Product[] = [
     ],
   
   },
-  {
-    id: "apple-watch-series-9",
-    name: "Apple Watch Series 9 45mm",
-    category: "apple-watch",
-    price: 349,
-    image: "/images/apple-watch.jpg",
-    condition: "Nuevo",
-    stock: 4,
-    description:
-      "Apple Watch Series 9 nuevo y sellado. Caja de aluminio de 45mm, GPS. Chip S9 SiP con doble toque.",
-    specs: [
-      "Caja: Aluminio 45mm",
-      "Chip: S9 SiP",
-      "Pantalla: Always-On Retina LTPO",
-      "Conectividad: GPS",
-      "Resistencia: WR50",
-      "Color: Medianoche",
-    ],
-  },
-  {
-    id: "airpods-pro-2",
-    name: "AirPods Pro 2 USB-C",
-    category: "airpods",
-    price: 199,
-    image: "/images/airpods-pro.jpg",
-    condition: "Nuevo",
-    stock: 8,
-    description:
-      "AirPods Pro de segunda generacion con estuche de carga USB-C. Cancelacion activa de ruido, modo transparencia adaptativo y audio espacial personalizado.",
-    specs: [
-      "Cancelacion activa de ruido",
-      "Modo Transparencia adaptativo",
-      "Audio Espacial personalizado",
-      "Hasta 6h de escucha con ANC",
-      "Estuche de carga USB-C",
-      "Resistencia: IPX4",
-    ],
-  },
+
   {
     id: "ps5-slim-digital",
     name: "PlayStation 5 Slim Digital",
